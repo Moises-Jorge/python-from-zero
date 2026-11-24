@@ -2,7 +2,7 @@
 Step-by-Step Debugging (Python Execution Order)
 
 1. First Error (Before execution - Syntax Phase):
-   - Exact Message: SyntaxError: expected ':' (on the line 'if media >= 10')
+   - Exact Message: SyntaxError: expected ':' (on the line 'if average >= 10')
    - Reason: Python parses and checks the grammar of the entire file before running it.
      Because the colon (:) is missing, the program aborts immediately before even asking
      for the inputs, hiding all subsequent runtime errors.
@@ -22,10 +22,10 @@ Step-by-Step Debugging (Python Execution Order)
 """
 
 # corrected code:
-nota1 = float(input("Nota 1: "))
-nota2 = float(input("Nota 2: "))
-media = (nota1 + nota2) / 2
-if media >= 10:
-    print("Aprovado")
+grade1 = float(input("Grade 1: "))
+grade2 = float(input("Grade 2: "))
+average = (grade1 + grade2) / 2
+if average >= 10:
+    print("Approved")
 else:
-    print("Reprovado")
+    print("Failed")
