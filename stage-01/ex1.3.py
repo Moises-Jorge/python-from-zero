@@ -17,6 +17,7 @@ Validation with a real value:
 - Input: 91750 AOA | Rate: 917.50 AOA per 1 USD
 - Expected and actual output: 91750.00 Kz = $100.00
 - Source: National Bank of Angola (BNA) reference rate on 2026-11-17 (1 USD = 917.50 AOA)
+
 """
 
 from decimal import Decimal
